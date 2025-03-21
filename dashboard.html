@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Dashboard</h2>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h3 id="formTitle">Add User</h3>
+            <input type="text" id="userId" placeholder="ID">
+            <input type="text" id="userName" placeholder="Name">
+            <input type="email" id="userEmail" placeholder="Email">
+            <button id="addBtn" onclick="addUser()">Add User</button>
+            <button id="updateBtn" onclick="updateUser()" style="display: none;">Update User</button>
+        </div>
+
+        <div class="table-container">
+            <h3>User List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="userList"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

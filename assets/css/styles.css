@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    background: #333;
+    color: white;
+}
+
+.logout-btn {
+    background: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background: #ff6600;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ff4500;
+}
+
+.delete-btn {
+    background: red;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid white;
+    text-align: left;
+}
